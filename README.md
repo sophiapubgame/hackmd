@@ -1,3 +1,8 @@
+Changes
+===
+Forked from [https://github.com/hackmdio/hackmd](https://github.com/hackmdio/hackmd)
+and make it more like a note shelve
+
 HackMD
 ===
 
@@ -7,16 +12,16 @@ HackMD
 [![build status][travis-image]][travis-url]
 
 
-HackMD lets you create realtime collaborative markdown notes on all platforms.  
-Inspired by Hackpad, with more focus on speed and flexibility.  
+HackMD lets you create realtime collaborative markdown notes on all platforms.
+Inspired by Hackpad, with more focus on speed and flexibility.
 Still in the early stage, feel free to fork or contribute to HackMD.
 
 Thanks for using! :smile:
 
-[docker-hackmd](https://github.com/hackmdio/docker-hackmd)
+[docker-hackmd](https://github.com/dy93/docker-hackmd)
 ---
 
-Before you go too far, here is the great docker repo for HackMD.  
+Before you go too far, here is the great docker repo for HackMD.
 With docker, you can deploy a server in minutes without any downtime.
 
 Heroku Deployment
@@ -29,14 +34,14 @@ You can quickly setup a sample heroku hackmd application by clicking the button 
 [migration-to-0.5.0](https://github.com/hackmdio/migration-to-0.5.0)
 ---
 
-We don't use LZString to compress socket.io data and DB data after version 0.5.0.  
+We don't use LZString to compress socket.io data and DB data after version 0.5.0.
 Please run the migration tool if you're upgrading from the old version.
 
 [migration-to-0.4.0](https://github.com/hackmdio/migration-to-0.4.0)
 ---
 
-We've dropped MongoDB after version 0.4.0.  
-So here is the migration tool for you to transfer the old DB data to the new DB.  
+We've dropped MongoDB after version 0.4.0.
+So here is the migration tool for you to transfer the old DB data to the new DB.
 This tool is also used for official service.
 
 Browsers Requirement
@@ -144,7 +149,7 @@ Environment variables (will overwrite other server configs)
 | HMD_LDAP_SEARCHFILTER | `(uid={{username}})` | LDAP filter to search with |
 | HMD_LDAP_SEARCHATTRIBUTES | no example | LDAP attributes to search with |
 | HMD_LDAP_TLS_CA | `server-cert.pem, root.pem` | Root CA for LDAP TLS in PEM format (use comma to separate) |
-| HMD_LDAP_PROVIDERNAME | `My institution` | Optional name to be displayed at login form indicating the LDAP provider | 
+| HMD_LDAP_PROVIDERNAME | `My institution` | Optional name to be displayed at login form indicating the LDAP provider |
 | HMD_IMGUR_CLIENTID | no example | Imgur API client id |
 | HMD_EMAIL | `true` or `false` | set to allow email signin |
 | HMD_ALLOW_EMAIL_REGISTER | `true` or `false` | set to allow email register (only applied when email is set, default is `true`) |
@@ -221,9 +226,9 @@ Third-party integration oauth callback urls
 Operational Transformation
 ---
 
-From 0.3.2, we started supporting operational transformation.  
-It makes concurrent editing safe and will not break up other users' operations.  
-Additionally, now can show other clients' selections.  
+From 0.3.2, we started supporting operational transformation.
+It makes concurrent editing safe and will not break up other users' operations.
+Additionally, now can show other clients' selections.
 See more at [http://operational-transformation.github.io/](http://operational-transformation.github.io/)
 
 **License under MIT.**
