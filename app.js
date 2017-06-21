@@ -162,10 +162,12 @@ app.engine('ejs', ejs.renderFile)
 // set view engine
 app.set('view engine', 'ejs')
 
+
 app.use(require('./lib/web/baseRouter'))
 app.use(require('./lib/web/statusRouter'))
 app.use(require('./lib/web/auth'))
 app.use(require('./lib/web/historyRouter'))
+app.use(require('./lib/web/exploreRouter'))
 app.use(require('./lib/web/userRouter'))
 app.use(require('./lib/web/imageRouter'))
 app.use(require('./lib/web/noteRouter'))

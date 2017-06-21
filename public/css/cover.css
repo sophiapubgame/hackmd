@@ -312,6 +312,30 @@ input {
     min-width: 172px;
     max-width: 344px;
 }
+.ui-explore-use-tags {
+    min-width: 172px;
+    max-width: 344px;
+}
+
+.ui-explore-tooltip-text {
+    visibility: hidden;
+    white-space : nowrap;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+
+    white-space : nowrap;
+}
+
+.ui-explore-tooltip:hover .ui-explore-tooltip-text {
+    visibility: visible;
+    overflow: hidden;
+}
 
 .modal-title {
     text-align: left;
